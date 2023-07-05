@@ -1,5 +1,9 @@
 "use strict";
 
+// Creating Hangman with O.O.P.
+
+// inspiration: https://codereview.stackexchange.com/questions/254048/create-a-simple-hangman-game-using-oop-and-javascript
+
 /*
 const form = document.getElementById("form_lang");
 const changeBtn = document.getElementById("change_lang");
@@ -63,9 +67,16 @@ class Game {
 
   letterCheck(a) {
     let word1 = this.word;
-    let letter = a;
+    let wordLetters = word1.split("");
+    let letterGuess = a;
 
-    return letter;
+    wordLetters.forEach((letter) => {
+      if (letterGuess === letter) {
+        console.log(letterGuess, "is included");
+      }
+    });
+
+    return wordLetters;
   }
 
   getName() {
