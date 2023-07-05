@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="main.js" defer></script>
+    <script src="test" defer></script>
+
+    <title>Hangman</title>
+  </head>
+  <body>
+    <header>
+      <h1>Let's play hangman!</h1>
+    </header>
+
+    <div id="form_lang">
+      <h2>Which language?</h2>
+      <button id="btn_eng">English?</button>
+      <button id="btn_ger">German?</button>
+    </div>
+
+    <button class="hidden" id="start_btn">Start</button>
+    <div class="game">
+      <div class="game_input">
+        <input
+          class="hidden"
+          type="text"
+          id="letter_input"
+          placeholder="Please type a letter."
+        />
+      </div>
+      <div class="gamedisplay"></div>
+    </div>
+    <footer>
+      <button class="hidden" id="change_lang">Change Language?</button>
+    </footer>
+  </body>
+</html>
